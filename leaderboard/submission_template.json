@@ -1,11 +1,11 @@
 {
   "group_name": "Team Alpha",
-  "project_private_repo_url": "https://github.com/yourusername/project.git",
+  "project_private_repo_url": "https://github.com/Qian9921/AAE5303_assignment2_orbslam3_demo-",
   "metrics": {
-    "ate_rmse_m": 0.0,
-    "rpe_trans_drift_m_per_m": 0.0,
-    "rpe_rot_drift_deg_per_100m": 0.0,
-    "completeness_pct": 0.0
+    "ate_rmse_m": 0.7721,
+    "rpe_trans_drift_m_per_m": 1.3857,
+    "rpe_rot_drift_deg_per_100m": 108.6561,
+    "completeness_pct": 96.06
   }
 }
 

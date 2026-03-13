@@ -1,0 +1,127 @@
+--------------------------------------------------------------------------------
+Loaded 1955 stamps and poses from: /root/ORB_SLAM3/ground_truth.txt
+Loaded 3751 stamps and poses from: /root/ORB_SLAM3/CameraTrajectory.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 1878 of max. 1955 possible matching timestamps between...
+	/root/ORB_SLAM3/ground_truth.txt
+and:	/root/ORB_SLAM3/CameraTrajectory.txt
+..with max. time diff.: 0.1 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method... (with scale correction)
+Rotation of alignment:
+[[ 0.09375965  0.99548417  0.01484562]
+ [ 0.99293789 -0.09241038 -0.07439535]
+ [-0.0726875   0.02171606 -0.99711832]]
+Translation of alignment:
+[ 0.32055146  0.41136089 -0.15486227]
+Scale correction: 0.554212551389633
+--------------------------------------------------------------------------------
+Compared 1878 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with Sim(3) Umeyama alignment)
+
+       max	3.910811
+      mean	0.716911
+    median	0.660207
+       min	0.157621
+      rmse	0.788175
+       sse	1166.651673
+       std	0.327505
+
+--------------------------------------------------------------------------------
+Saving results to /tmp/aae5303_eval/ate.zip...
+--------------------------------------------------------------------------------
+Loaded 1955 stamps and poses from: /root/ORB_SLAM3/ground_truth.txt
+Loaded 3751 stamps and poses from: /root/ORB_SLAM3/CameraTrajectory.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 1878 of max. 1955 possible matching timestamps between...
+	/root/ORB_SLAM3/ground_truth.txt
+and:	/root/ORB_SLAM3/CameraTrajectory.txt
+..with max. time diff.: 0.1 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method... (with scale correction)
+Rotation of alignment:
+[[ 0.09375965  0.99548417  0.01484562]
+ [ 0.99293789 -0.09241038 -0.07439535]
+ [-0.0726875   0.02171606 -0.99711832]]
+Translation of alignment:
+[ 0.32055146  0.41136089 -0.15486227]
+Scale correction: 0.554212551389633
+--------------------------------------------------------------------------------
+Found 177 pairs with delta 10.0 (m) among 1878 poses using consecutive pairs.
+Compared 177 relative pose pairs, delta = 10.0 (m) with consecutive pairs.
+Calculating RPE for translation part pose relation...
+--------------------------------------------------------------------------------
+RPE w.r.t. translation part (m)
+for delta = 10.0 (m) using consecutive pairs
+(with Sim(3) Umeyama alignment)
+
+       max	22.631025
+      mean	13.894647
+    median	15.184328
+       min	0.594594
+      rmse	15.539761
+       sse	42742.700222
+       std	6.958661
+
+--------------------------------------------------------------------------------
+Saving results to /tmp/aae5303_eval/rpe_trans.zip...
+--------------------------------------------------------------------------------
+Loaded 1955 stamps and poses from: /root/ORB_SLAM3/ground_truth.txt
+Loaded 3751 stamps and poses from: /root/ORB_SLAM3/CameraTrajectory.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 1878 of max. 1955 possible matching timestamps between...
+	/root/ORB_SLAM3/ground_truth.txt
+and:	/root/ORB_SLAM3/CameraTrajectory.txt
+..with max. time diff.: 0.1 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method... (with scale correction)
+Rotation of alignment:
+[[ 0.09375965  0.99548417  0.01484562]
+ [ 0.99293789 -0.09241038 -0.07439535]
+ [-0.0726875   0.02171606 -0.99711832]]
+Translation of alignment:
+[ 0.32055146  0.41136089 -0.15486227]
+Scale correction: 0.554212551389633
+--------------------------------------------------------------------------------
+Found 177 pairs with delta 10.0 (m) among 1878 poses using consecutive pairs.
+Compared 177 relative pose pairs, delta = 10.0 (m) with consecutive pairs.
+Calculating RPE for rotation angle in degrees pose relation...
+--------------------------------------------------------------------------------
+RPE w.r.t. rotation angle in degrees (deg)
+for delta = 10.0 (m) using consecutive pairs
+(with Sim(3) Umeyama alignment)
+
+       max	149.294325
+      mean	10.938181
+    median	2.881854
+       min	0.070782
+      rmse	20.826428
+       sse	76772.001945
+       std	17.722763
+
+--------------------------------------------------------------------------------
+Saving results to /tmp/aae5303_eval/rpe_rot.zip...
+================================================================================
+AAE5303 MONOCULAR VO EVALUATION (evo)
+================================================================================
+Ground truth: /root/ORB_SLAM3/ground_truth.txt
+Estimated:    /root/ORB_SLAM3/CameraTrajectory.txt
+Association:  t_max_diff = 0.100 s
+RPE delta:    10.000 m
+
+
+================================================================================
+PARALLEL METRICS (NO WEIGHTING)
+================================================================================
+ATE RMSE (m):                 0.788175
+RPE trans drift (m/m):        1.389465
+RPE rot drift (deg/100m):     109.381809
+Completeness (%):             96.06  (1878 / 1955)
+
+Saved JSON report to: /tmp/aae5303_eval/evaluation_report.json
