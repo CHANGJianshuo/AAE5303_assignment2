@@ -295,7 +295,7 @@ Camera.RGB: 1
 | `nFeatures` | 1500 | **3500** | More features for high-resolution UAV images; improves matching robustness |
 | `scaleFactor` | 1.2 | 1.2 | Standard multi-scale pyramid factor |
 | `nLevels` | 8 | **9** | Additional pyramid level captures larger-scale structures |
-| `iniThFAST` | 20 | **9** | Lower threshold detects features in low-texture regions (sky, water) |
+| `iniThFAST` | 20 | **10** | Lower threshold detects features in low-texture regions (sky, water) |
 | `minThFAST` | 7 | **2** | Aggressive fallback ensures features even in challenging frames |
 
 ### Running ORB-SLAM3
@@ -426,7 +426,7 @@ Running the same pipeline with default ORB-SLAM3 parameters (nFeatures=1500, ini
 
 The dramatic ATE improvement (from 85.82 m to 0.77 m) is primarily due to:
 1. More features (3500 vs 1500) enabling robust matching in high-resolution frames
-2. Lower FAST thresholds (9/2 vs 20/7) detecting features in low-texture aerial regions
+2. Lower FAST thresholds (10/2 vs 20/7) detecting features in low-texture aerial regions
 3. An additional pyramid level (9 vs 8) capturing multi-scale structures
 4. Reduced tracking failures leading to more continuous trajectory estimation
 
@@ -458,7 +458,7 @@ This figure includes four panels:
 
 2. **High evaluation coverage**: 96.06% completeness (best run) indicates that ORB-SLAM3 successfully tracked across nearly the entire flight sequence, a significant improvement over the initial 89.82%.
 
-3. **Significant improvement through tuning**: Increasing ORB features to 3500, lowering FAST thresholds to 9/2, and adding an extra pyramid level reduced ATE by over two orders of magnitude compared to default parameters.
+3. **Significant improvement through tuning**: Increasing ORB features to 3500, lowering FAST thresholds to 10/2, and adding an extra pyramid level reduced ATE by over two orders of magnitude compared to default parameters.
 
 4. **High repeatability**: 87.5% tracking success rate (7/8 runs) with consistent metrics across successful runs (ATE std < 0.1 m across runs) demonstrates reliable performance.
 
@@ -495,7 +495,7 @@ This assignment demonstrates monocular Visual Odometry implementation using ORB-
 1. **Sub-meter accuracy achieved**: Best ATE RMSE of 0.772 m (mean 0.845 m over 7 runs) after Sim(3) alignment on a 1.9 km outdoor UAV trajectory
 2. **High completeness**: Up to 96.06% of ground-truth poses successfully matched and evaluated
 3. **Robust and repeatable**: 87.5% tracking success rate across 8 runs with consistent metrics
-4. **Parameter tuning is critical**: Increasing features (3500), lowering FAST thresholds (9/2), and adding pyramid levels (9) transformed performance from 85.82 m to 0.77 m ATE
+4. **Parameter tuning is critical**: Increasing features (3500), lowering FAST thresholds (10/2), and adding pyramid levels (9) transformed performance from 85.82 m to 0.77 m ATE
 5. **Rotation drift remains a challenge**: RPE rotation drift of ~109 deg/100m highlights the difficulty of orientation estimation in aerial scenarios
 
 ### Recommendations for Further Improvement
