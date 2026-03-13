@@ -1,6 +1,6 @@
 {
-  "group_name": "Team Alpha",
-  "project_private_repo_url": "https://github.com/Qian9921/AAE5303_assignment2_orbslam3_demo-",
+  "group_name": "Debuggers",
+  "project_private_repo_url": "https://github.com/CHANGJianshuo/AAE5303_assignment2",
   "metrics": {
     "ate_rmse_m": 0.7721,
     "rpe_trans_drift_m_per_m": 1.3857,
